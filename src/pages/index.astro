@@ -1,12 +1,8 @@
 ---
-import '../styles/global.css';
-import Footer from '../components/footer.astro';
-import Header from '../components/header.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const Title = "Page D'Accueil";
 ---
 
-<Header Title="Accueil"/>
-<h1>Mon Site Astro</h1>
-<Footer />
-<script>
-import "../scripts/menu.js";
-</script>
+<BaseLayout Title={Title}>
+<h2>Sous titre de blog</h2>
+</BaseLayout>
