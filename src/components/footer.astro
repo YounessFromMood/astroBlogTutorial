@@ -1,8 +1,20 @@
 ---
 const platform = "github";
 const username = "YounessFromMood";
+
+import Social from './social.astro';
 ---
 
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
 <footer>
-  <p>Apprenez-en plus sur mes projets sur <a href={`https://www.${platform}.com/${username}`}>{platform}</a> !</p>
+  <Social platform="twitter" username="YounessFromMood" /><br>
+  <Social platform="github" username="YounessFromMood" /><br>
+  <Social platform="youtube" username="YounessFromMood" /><br>
 </footer>

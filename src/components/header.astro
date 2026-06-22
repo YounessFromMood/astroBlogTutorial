@@ -1,0 +1,21 @@
+---
+const {Title} = Astro.props;
+import Nav from '../components/nav.astro';
+import Menu from '../components/menu.astro';
+---
+
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{Title}</title>
+	</head>
+	<body>
+		<Menu/>
+		<Nav/>
+		<slot/>
+    </body>
+</html>
